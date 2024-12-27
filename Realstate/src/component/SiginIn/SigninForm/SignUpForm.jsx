@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./SignUpForm.module.css";
 
-const SignUpForm = (onclose) => {
+const SignUpForm = ({onclose}) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -48,6 +48,7 @@ const SignUpForm = (onclose) => {
     <div className={styles.container}>
       <div className={styles.formWrapper}>
         <h2>Create Your Account</h2>
+        <button className={styles.closebutton} onClick={()=>{onclose(true)}}><i class="fa-solid fa-square-xmark"></i></button>
         <form className={styles.form} onSubmit={handleSubmit}>
           <label>
             Name:
@@ -130,7 +131,7 @@ const SignUpForm = (onclose) => {
               Sign in with Facebook
             </button>
           </div>
-          <button type="submit" className={styles.signUpButton}>
+          <button type="submit" onClick={()=>{onclose(true)}} className={styles.signUpButton}>
             Sign Up
           </button>
         </form>

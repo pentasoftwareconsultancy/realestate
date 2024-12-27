@@ -56,13 +56,13 @@ const Navbar = () => {
                 <Link to="/" className={styles['navbar-link']}>Home</Link>
               </li>
               <li>
-              <a href="#" className={styles['navbar-link']}>Property</a>
+              <Link to="/property" className={styles['navbar-link']}>Property</Link>
               </li>
               <li>
-              <a href="#" className={styles['navbar-link']}>Loan</a>
+              <Link to="/Loan" className={styles['navbar-link']}>Loan</Link>
               </li>
               <li>
-                <a href="#" className={styles['navbar-link']}>Leasing</a>
+                <Link to="/Leasing" className={styles['navbar-link']}>Leasing</Link>
               </li>
               <li>
                 <Link to="/aboutus" className={styles['navbar-link']}>About Us</Link>
@@ -92,7 +92,7 @@ const Navbar = () => {
       { isSignUpOpen && 
                 <div className={styles.signupform}>
                      <SignUpForm onclose={()=>setIsSignUPOpen(false)} />
-        </div>
+                </div>
       }
     </div>
   );

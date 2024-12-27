@@ -1,5 +1,6 @@
 import React from "react";
 import "./aboutus.css"; // Import the CSS file
+import Footer from "../../component/footer/Footer";
 
 const AboutUs = () => {
   return (
@@ -73,6 +74,8 @@ const AboutUs = () => {
         <img src="https://jll-global-gdim-res.cloudinary.com/image/upload/t_olm-image-optimization/v1707290687/2024-02/jll-about-us-desktop.jpg" alt="JLL Homes Office" />
       </div>
     </div>
+    
+    <Footer/>
     </>
   );
 };
