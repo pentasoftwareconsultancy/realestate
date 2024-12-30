@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import propertyData from "./Data";
 
+
+
 import './property-detail.css';
 
 function PropertyDetail() {
@@ -54,7 +56,7 @@ function PropertyDetail() {
 
         <div className="details-wrapper">
           <figure className="details-banner">
-            <img
+          <img
               src={property.image}
               alt={property.title}
               className="img-cover"

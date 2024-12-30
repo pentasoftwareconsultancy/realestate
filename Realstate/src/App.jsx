@@ -24,8 +24,15 @@ function App() {
       <Navbar />
       <Routes>
        
-        <Route path="/property/:id" element={<PropertyDetail />} />
-        <Route path="/property" element={<PropertyPage/>} />
+        <Route path="/property/:id" element={<PropertyDetail />} />     
+       
+       
+        <Route path="/property" element={<PropertyPage/>}>
+          {/* <Route path="buy" element={<Buy />} /> */}
+          {/* <Route path="sell" element={<Sell />} /> */}
+        </Route>
+
+
         <Route path="/property" element={<Property/>} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/Contact" element={<ContactPage/>} />

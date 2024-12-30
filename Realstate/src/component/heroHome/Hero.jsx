@@ -79,7 +79,7 @@ function Hero({ onSearch }) {
       <h5>It is a paradisematic country, in which roasted parts.</h5>
 
       {/* Search bar */}
-      <div className={style.input_box}>
+      {/* <div className={style.input_box}>
         <form onSubmit={handleSearch} className={style.search_form}>
           <input
             type="text"
@@ -101,7 +101,7 @@ function Hero({ onSearch }) {
             </button>
           </div>
         </form>
-      </div>
+      </div> */}
 
       {/* Slider navigation buttons */}
       <div className={style.sliderButtons}>
