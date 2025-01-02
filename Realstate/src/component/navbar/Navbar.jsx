@@ -59,10 +59,7 @@ const Navbar = () => {
               <Link to="/property" className={styles['navbar-link']}>Property</Link>
               </li>
               <li>
-              <Link to="/Loan" className={styles['navbar-link']}>Loan</Link>
-              </li>
-              <li>
-                <Link to="/Leasing" className={styles['navbar-link']}>Leasing</Link>
+              <Link to="/service" className={styles['navbar-link']}>Service</Link>
               </li>
               <li>
                 <Link to="/aboutus" className={styles['navbar-link']}>About Us</Link>

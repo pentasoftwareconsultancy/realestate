@@ -18,6 +18,7 @@ import ContactPage from './page/ContactPage/ContactPage';
 import Error from './page/ErrorPage/Error';
 import PropertyPage from './page/PropertyPage/PropertyPage';
 import SeProperty from './page/SerchedProperties/SeProperty';
+import ServicePage from './page/servicePage/ServicePage';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path="/about-details" element={<AboutDetails />} />
         <Route path="/seProperty" element={<SeProperty/>} />
         <Route path="/error" element={<Error/>} />
+        <Route path="/service" element={<ServicePage/>} />
         <Route path="/" element={
           <>
              

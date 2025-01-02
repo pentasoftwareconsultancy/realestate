@@ -42,7 +42,7 @@ const AboutUs = () => {
         <iframe
           width="560"
           height="315"
-          src="https://youtu.be/OkpIoEC44kk?si=LcpBr68aqTCIdeDU" // Replace VIDEO_ID with your YouTube video ID
+          src="https://www.youtube.com/embed/y9j-BL5ocW8?si=uXbnmDoX_u8Rxg9_" // Replace VIDEO_ID with your YouTube video ID
           title="See A Brighter Way"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
