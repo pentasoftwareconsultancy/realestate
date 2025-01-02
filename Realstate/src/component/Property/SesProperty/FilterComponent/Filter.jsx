@@ -1,6 +1,33 @@
 import React from 'react'
 import styles from './Filter.module.css'
-function Filter() {
+
+function Filter(setPropertyList,properties) {
+
+
+  const filterProperties = (event) => {
+    const searchTerm = event.target.value.toLowerCase();
+    const filtered = properties.filter(
+      (p) =>
+        p.price.toLowerCase().includes(searchTerm)
+    );
+    setPropertyList(filtered);
+  };
+
+
+  const handleCityFilter = (event) => {
+    const selectedCity = event.target.value.toLowerCase();
+
+    if (selectedCity === "all") {
+      // Show all properties if "All" is selected
+      setPropertyList(properties);
+    } else {
+      const filtered = properties.filter(
+        (p) => p.location.toLowerCase() === selectedCity
+      );
+      setPropertyList(filtered);
+    }
+  };
+
   return (
     <div className={styles.Filter}>
       <div className={styles.sidebar}>
@@ -17,8 +44,8 @@ function Filter() {
         <div className={styles.slider}>
           <input type="range" min="0" max="100" />
           <div className={styles.budgetRange}>
-            <input type="text" placeholder="Min Budget" />
-            <input type="text" placeholder="Max Budget" />
+            <input type="text" placeholder="Min Budget" onChange={filterProperties} />
+            <input type="text" placeholder="Max Budget" onChange={filterProperties} />
           </div>
         </div>
       </div>
@@ -58,14 +85,15 @@ function Filter() {
 
       <div className={styles.section}>
       <h4>Localities</h4>
-        <select name="Localities" id="">
+      <label htmlFor="city-filter">Filter by City:</label>
+      <select id="city-filter" onChange={handleCityFilter}>
+        <option value="all">All Cities</option>
         <option value="pune">Pune</option>
-        <option value="Kharadi">Kharadi</option>
-        <option value="Wakad">Wakad</option>
-        <option value="Undriradi">Undri</option>
-        <option value="Baner">Baner</option>
-        <option value="more"><button className={styles.moreButton}>More Localities</button>        </option>
-        </select>
+        <option value="mumbai">Mumbai</option>
+        <option value="thane">Thane</option>
+        <option value="bangalore">Bangalore</option>
+        <option value="beed">Beed</option>
+      </select>
         <ul className={styles.checkboxList}>
         
         </ul>

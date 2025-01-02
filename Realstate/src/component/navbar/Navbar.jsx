@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css'; // Import the CSS module
 import Contact from '../navbar/Contact/Contact';
 import SignUpForm from '../SiginIn/SigninForm/SignUpForm';
+import IndiaButton from '../../component/navbar/IndiaButton/IndiaButton.jsx';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -67,9 +68,14 @@ const Navbar = () => {
               <li>
                  <Link to='/Contact' className={styles['navbar-link']}>Contact</Link>
               </li>
-            </ul>
+            </ul>            
+                 <IndiaButton/>
             <a href="#" className={`${styles.signUp} ${styles.btn}`}>
-              <button onClick={()=>{setIsSignUPOpen(true)}} > SignUp </button>
+              <button onClick={()=>{
+                  
+              (isSignUpOpen)?setIsSignUPOpen(false):setIsSignUPOpen(true);
+
+              }} > SignUp </button>
             </a>
           </nav>
           <button

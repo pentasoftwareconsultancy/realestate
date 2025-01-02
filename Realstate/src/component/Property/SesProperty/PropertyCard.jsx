@@ -15,7 +15,11 @@ const PropertyCard = ({ propertyes }) => {
         <p><strong>BHK:</strong> {propertyes.bhk}</p>
         <p><strong>Status:</strong> {propertyes.status}</p>
         </div>
-        <p><button className={styles.button}><i class="fa-solid fa-phone"></i> Contact</button> </p>
+        <div className={styles.bottomdiv}><button className={styles.button}><i class="fa-solid fa-phone"></i> Contact</button> 
+          <div className={styles.location}>
+           <i class="fa-solid fa-location-dot"></i> {propertyes.location}
+          </div>
+         </div>
       </div>
     </div>
   );
