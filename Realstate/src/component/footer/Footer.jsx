@@ -103,7 +103,7 @@ function Footer() {
    
       <div className="footer-bottom">
         <p className="copyright">
-          &copy; Devcons Software Solutions Pvt.{" "}
+          &copy; Devcave RealEstate Pvt.{" "}
           <a href="#" className="copyright-link">
            Ltd.
           </a>

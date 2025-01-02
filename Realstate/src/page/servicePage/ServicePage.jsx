@@ -1,5 +1,6 @@
 import React from "react";
 import './servicePage.css';
+import Footer from "../../component/footer/Footer";
 
 const ServicePage = () => {
   return (
@@ -22,10 +23,9 @@ const ServicePage = () => {
         <div className="service-image">
           <img src="https://cdn.corporatefinanceinstitute.com/assets/multiple-listing-service-mls.jpeg" alt="Buying Process" />
         </div>
-        <div className="service-image">
-          <img src="https://jll-global-gdim-res.cloudinary.com/image/u…9/olmwebcontents/ip/prod/nbscploemdaf1pz5fsgv.jpg" />
-        </div>
       </div>
+      <Footer />
+      
     </>
   );
 }
