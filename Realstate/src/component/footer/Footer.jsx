@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer-top">
         <div className="footer-brand">
           <a href="#" className="logo">
-            <ion-icon name="business-outline"></ion-icon> Devcons
+            <ion-icon name="business-outline"></ion-icon> Devcave
           </a>
           <p className="footer-text">
             A great platform to buy, sell, and rent your properties without any
@@ -100,7 +100,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-
+   
       <div className="footer-bottom">
         <p className="copyright">
           &copy; Devcons Software Solutions Pvt.{" "}

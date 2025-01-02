@@ -12,7 +12,7 @@
   justify-content: center;
   padding: 60px 20px;
   margin-top: 50px;
-  background-color: #f8f9fa; 
+  background-color: #E0EFF7; 
 }
 
 
@@ -43,18 +43,16 @@
 
 .about-banner {
   position: relative;
-  flex: 1 1 48%;
-  margin-left: 4%;
+  /* margin-left: 4%; */
+  width: 50%;
   /* justify-content: center; */
-  
-  width: 70%;
 }
 
 .about-banner-img {
   width: 100%;
   height: 50%;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
 .about-banner .play-btn {
@@ -88,10 +86,10 @@
 }
 
 .about-title {
-  font-size: 2.5rem; 
+  font-size: 3rem; 
   font-weight: bold;
-  color: #102a43;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .about-text {

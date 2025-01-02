@@ -25,10 +25,10 @@ const Navbar = () => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
         header.classList.add(styles.scrolled);
-        navbarList.classList.add(styles.scrolled);
+        // navbarList.classList.add(styles.scrolled);
       } else {
         header.classList.remove(styles.scrolled);
-        navbarList.classList.remove(styles.scrolled);
+        // navbarList.classList.remove(styles.scrolled);
       }
     };
 

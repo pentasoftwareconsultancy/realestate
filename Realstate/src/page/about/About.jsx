@@ -1,19 +1,19 @@
 import React from 'react';
 import './about.css'
+import img from "../../assets/Hero/real.webp";
 
 const About = () => {
   return (
     <section className="about-section">
       <div className="containers">
         <div className="about-banner">
+
           <img
-            src='https://github.com/codewithsadee/realvine/blob/master/assets/images/about-banner.jpg?raw=true'
+           src={img}
+            // src='https://github.com/codewithsadee/realvine/blob/master/assets/images/about-banner.jpg?raw=true'
             alt="About Banner"
             className="about-banner-img"
           />
-          <button className="play-btn">
-            <ion-icon name="play" aria-hidden="true"></ion-icon>
-          </button>
         </div>
 
         <div className="about-content">

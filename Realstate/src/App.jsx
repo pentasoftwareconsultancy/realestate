@@ -17,6 +17,7 @@ import HeroForm from './component/heroHome/form/HeroForm';
 import ContactPage from './page/ContactPage/ContactPage';
 import Error from './page/ErrorPage/Error';
 import PropertyPage from './page/PropertyPage/PropertyPage';
+import SeProperty from './page/SerchedProperties/SeProperty';
 
 function App() {
   return (
@@ -32,11 +33,12 @@ function App() {
           {/* <Route path="sell" element={<Sell />} /> */}
         </Route>
 
-
-        <Route path="/property" element={<Property/>} />
-        <Route path="/aboutus" element={<AboutUs />} />
+       
+        <Route path="/propertyes" element={<Property/>} />
+        <Route path="/aboutus" element={<AboutUs/>}/>
         <Route path="/Contact" element={<ContactPage/>} />
         <Route path="/about-details" element={<AboutDetails />} />
+        <Route path="/seProperty" element={<SeProperty/>} />
         <Route path="/error" element={<Error/>} />
         <Route path="/" element={
           <>

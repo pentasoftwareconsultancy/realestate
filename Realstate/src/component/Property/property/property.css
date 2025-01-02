@@ -250,3 +250,17 @@
     margin-bottom: 30px; 
   }
 }
+
+.h5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonMore{
+     color: var(--maximum-red);
+     font-weight: 600;
+     padding: 10px;
+     border-radius: 5px;
+     /* background-color: var(--green-pigment); */
+}

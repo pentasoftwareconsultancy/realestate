@@ -2,7 +2,7 @@
 .footer {
   background-color: #1c1c1c;
   color: #d3d3d3;
-  padding: 60px 20px; 
+  padding: 60px 20px 20px 20px; 
   margin-block-start: -50px;
   box-sizing: border-box; 
 }
@@ -30,7 +30,7 @@
   gap: 8px;
   color: #ffffff;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 4rem;
   margin-bottom: 15px;
 }
 
@@ -48,7 +48,7 @@
 
 .footer-list-title {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -69,11 +69,12 @@
 
 .footer-link ion-icon {
   font-size: 16px;
-  color: #7cfc00;
+  color: #7cfc00;  
 }
 
 .footer-link:hover {
-  color: #7cfc00;
+  color: var(--white);
+  font-size: 2rem;
 }
 
 .footer-item ion-icon {
@@ -97,9 +98,10 @@
 
 .footer-bottom {
   display: flex;
+  margin-top: 20px;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 0 0 0 ;
   background-color: #1b1b1b;
   border-top: 1px solid #333;
   gap: 20px; 

@@ -4,6 +4,7 @@
     height: 75vh;
     box-shadow: 5px 5px 10px rgba(0,0,0, 0.6);
     display: flex;
+    flex-wrap: wrap;
 }
 
 .Property_Banner{
@@ -13,6 +14,7 @@
    background-image: url(../../../../assets/Property/proBag.jpeg);
    background-size: cover;
    border: 2px  var(--contact-back) solid;
+    z-index: 100;
 }
 .content{
     position: absolute;
@@ -76,6 +78,28 @@
   
   .button:hover {
     opacity: 0.8;
+  }
+
+  @media (Max-width:1024px)
+  {
+    .Property_Banner{
+      z-index: 0;
+      display: none;
+    }
+      .content{
+        margin-top: -100px;
+        align-items: center;
+        width: 90%;
+      }
+      .content>p{
+        width: 90%;
+        margin: 0;
+        padding: 0;
+      }
+      .buttons{
+        margin-top: 50px;
+        width: 80%;
+      }
   }
   
 

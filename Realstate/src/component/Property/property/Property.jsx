@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -7,7 +8,9 @@ import 'swiper/css/autoplay';
 import { Navigation, Autoplay } from 'swiper/modules'; 
 import './property.css';
 
+
 function Property() {
+  const navigation = useNavigate();
   const properties = [
     {
       id: 1,
@@ -177,6 +180,9 @@ function Property() {
           ))}
         </Swiper>
       </div>
+      <h5 className='h5'> <button onClick={()=>{
+        navigation('/Error');
+      }} className="buttonMore"> See more.. </button>  </h5>
     </section>
   );
 }

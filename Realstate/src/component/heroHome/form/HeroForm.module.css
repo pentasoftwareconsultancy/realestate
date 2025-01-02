@@ -1,10 +1,11 @@
+
 .heroFormWrapper {
     background-color: rgb(255, 255, 255);
     margin-top: 5rem;
     z-index: 0;
-    padding: 20px;
-    width: 90%;
-    max-width: 1100px;
+    padding: 10px;
+    width: 80%;
+    height: 45vh;
     border-radius: 10px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     margin-inline: auto;
@@ -14,7 +15,12 @@
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
     border-radius: 16px;
   }
-  
+  .RenderComponent{
+      margin-top: 80px;
+      height: auto;
+  }
+
+
   /* Form Tabs */
   .formTab {
     display: flex;
@@ -24,7 +30,7 @@
     gap: 10px;
     margin-bottom: 2rem;
   }
-  
+ 
   /* Tab Button Styles */
   .tabBtn {
     padding: 12px 24px;
@@ -170,4 +176,100 @@
       grid-column: span 1;
     }
   }
+  .RenderComponent{
+            width: 100%;
+    }
   
+
+    /* buy */
+    .Buy{
+      margin-top:-80px;
+      width: 100%;
+      z-index: 100;
+      padding: 10px;
+      flex-wrap: wrap;
+      position: relative;
+      background-color: var(--white);
+      border-radius: 10px;
+      padding: 20px;
+      color: rgba(0, 0, 0, 0.47);
+  
+  }
+  .Buy> h3{
+      text-align: start;
+      padding: 5px;
+  }
+  
+  .form{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      /* margin-top: 10px; */
+  
+  }
+  .form > div {
+       width: 25%;
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      flex-direction: column;
+  }
+  .form > div > label{
+     font-weight: 600;
+     font-size: large;
+  }
+
+  .form > div > select{
+      padding: 5px 20px;
+      width: 200px;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+      outline: none;
+      border-radius: 4px;
+  }
+  .submit{
+      padding:  7px 10px;
+      color:var(--white);
+      font-weight: 600;
+      position: absolute;
+      right: 10%;
+      width: 200px;
+      bottom: -10%;
+       border-radius: 10px;
+      background-color: var(--green-pigment);
+  }
+  
+  @media (max-width:1024px){
+      .Buy{
+          height: auto;
+          width: 90%;
+      }
+      .form>div{
+          width: 100%;
+         gap: 1rem;
+      }
+      .form{
+         gap: 2rem;
+      }
+      .form > div > select{
+          padding: 10px;
+      }
+      .submit{
+          position: relative;
+          width: 50%;
+      }
+  }
+
+
+  .searchBuy{
+    display: flex;
+    /* flex: 1; */
+    width: 70%;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+.serch{
+  margin-top: 10px;
+  justify-content: space-around;
+}
