@@ -5,7 +5,9 @@
     z-index: 0;
     padding: 10px;
     width: 80%;
-    height: 45vh;
+    min-height: 50vh;
+    /* max-height:60vh; */
+    height: auto;
     border-radius: 10px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     margin-inline: auto;
@@ -76,6 +78,10 @@
     margin-bottom: 8px;
     color: rgba(0, 0, 0, 0.568);
   }
+
+.inputSearch{
+  max-width: 80%;
+}
 
   .heroForm .inputWrapper ion-icon {
     position: absolute;
@@ -235,7 +241,7 @@
       position: absolute;
       right: 10%;
       width: 200px;
-      bottom: -10%;
+      bottom: -12%;
        border-radius: 10px;
       background-color: var(--green-pigment);
   }

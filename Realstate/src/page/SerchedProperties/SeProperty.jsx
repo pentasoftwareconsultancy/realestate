@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './SeProperty.module.css';
 import { Link } from 'react-router-dom';
 import PropertyCard from '../../component/Property/SesProperty/PropertyCard';
@@ -7,9 +7,12 @@ import card3 from '../../assets/Property/propertycard/card2.jpg';
 import card2 from '../../assets/Property/propertycard/card3.jpg';
 import card4 from '../../assets/Property/propertycard/card4.jpeg';
 import Filter from '../../component/Property/SesProperty/FilterComponent/Filter';
+import { use } from 'react';
 
 
 function SeProperty() {
+
+  const [property,setProperties] = useState([]);
 
     const properties = [
         {
@@ -21,6 +24,7 @@ function SeProperty() {
           bhk: "3 BHK",
           status: "Under Construction",
           image: card1, // Replace with actual URLs
+          location: "Pune",
         },
         {
           id: 2,
@@ -31,6 +35,7 @@ function SeProperty() {
           bhk: "2 BHK",
           status: "Ready to Move",
           image: card2,
+          location: "Mumbai",
         },
         {
           id: 3,
@@ -41,6 +46,7 @@ function SeProperty() {
           bhk: "4 BHK",
           status: "Under Construction",
           image: card3,
+          location: "Banglore",
         },
         {
           id: 4,
@@ -51,6 +57,7 @@ function SeProperty() {
           bhk: "3 BHK",
           status: "Ready to Move",
           image: card1,
+          location: "pune",
         },
         {
           id: 5,
@@ -61,6 +68,7 @@ function SeProperty() {
           bhk: "5 BHK",
           status: "Under Construction",
           image: card2,
+          location: "Thane",
         },
         {
           id: 6,
@@ -71,14 +79,31 @@ function SeProperty() {
           bhk: "1 BHK",
           status: "Under Construction",
           image: card4,
+          location: "Beed",
         },
       ];
-      
+      // setProperties(properties);
+      // const Filter =(event)=>{
+      //   setProperties(properties.filter(f=> f.name.toLowerCase().includes(event.target.value)))
+      // }
 
+        const [propertyList, setPropertyList] = useState(properties);
+
+  const filterProperties = (event) => {
+    const searchTerm = event.target.value.toLowerCase();
+    const filtered = properties.filter(
+      (p) =>
+        p.title.toLowerCase().includes(searchTerm) ||
+        p.description.toLowerCase().includes(searchTerm) ||
+        p.location.toLowerCase().includes(searchTerm)
+    );
+    setPropertyList(filtered);
+  };
+      
         return (
     <div className={styles.SeeProperty}>
        <div className={styles.first}>
-         <Filter/>
+         <Filter setPropertyList = {setPropertyList} properties={properties}/>
        </div>
        <div className={styles.last}>
            <h3>4580 result |  Property in Pune for Sale</h3>
@@ -87,13 +112,13 @@ function SeProperty() {
                 <option value="Buy">BUY</option>
                 <option value="Sell">Sell</option>
             </select>
-            <input type="text" placeholder='Enter Place | Price | keyWords' />
+            <input type="text" placeholder='Enter Place | Price | keyWords' onChange={filterProperties} />
              <button type='submit' > <i class="fa-solid fa-magnifying-glass"></i></button>
            </div>
           <div className='properties'>
-            {properties.map((property) => (
+            {propertyList.map((property) => (
                <PropertyCard key={property.id} propertyes={property} />
-     ))}
+          ))}
          </div>
        </div>
     </div>
