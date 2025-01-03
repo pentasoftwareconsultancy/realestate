@@ -1,18 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import styles from "./buy.module.css";
 
 function Buy() {
+
+   const [search, setSearch] = useState('');
+  const [category, setCategory] = useState('');
+  const [minPrice, setMinPrice] = useState('');
+  const [maxPrice, setMaxPrice] = useState('');
+
   return (
     <div className={styles.Buy} >
           <h3>Buy Property</h3>
            <form action="submit" className={styles.form}>
             <div className="search">
                 <label htmlFor="search">Search : </label>
-                <input type="text" placeholder='Enter porperty' required/>
+                <input type="text" placeholder='Enter porperty' onChange={(e)=>{
+                  setSearch(event.target.value);
+                }} required/>
             </div>
             <div className={styles.categories}>
                 <label htmlFor="catg">Categaries</label>
-                 <select name="House" id="catg">
+                 <select name="House" id="catg" onChange={(e)=>{setCategory(e.target.value)}}>
                     <option value="House">House</option>
                     <option value="Aprtment">Aprtment</option>
                     <option value="office">Office</option>
@@ -21,7 +29,7 @@ function Buy() {
             </div>
             <div className={styles.prise}>
             <label htmlFor="price">Min price</label>
-                 <select name="price" id="price">
+                 <select name="price" id="price" onChange={(e)=>{setMinPrice(e.target.value)}}>
                     <option value="5000">5000</option>
                     <option value="5000">10000</option>
                     <option value="5000">15000</option>

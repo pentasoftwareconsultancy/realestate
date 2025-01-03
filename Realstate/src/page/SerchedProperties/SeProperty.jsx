@@ -13,7 +13,7 @@ import { use } from 'react';
 function SeProperty() {
 
   const [property,setProperties] = useState([]);
-
+  // const propertiesCount = propertyList.length();
     const properties = [
         {
           id: 1,
@@ -82,12 +82,9 @@ function SeProperty() {
           location: "Beed",
         },
       ];
-      // setProperties(properties);
-      // const Filter =(event)=>{
-      //   setProperties(properties.filter(f=> f.name.toLowerCase().includes(event.target.value)))
-      // }
+      
 
-        const [propertyList, setPropertyList] = useState(properties);
+   const [propertyList, setPropertyList] = useState(properties);
 
   const filterProperties = (event) => {
     const searchTerm = event.target.value.toLowerCase();
@@ -100,13 +97,13 @@ function SeProperty() {
     setPropertyList(filtered);
   };
       
-        return (
+ return (
     <div className={styles.SeeProperty}>
        <div className={styles.first}>
          <Filter setPropertyList = {setPropertyList} properties={properties}/>
        </div>
        <div className={styles.last}>
-           <h3>4580 result |  Property in Pune for Sale</h3>
+           <h3>4452 result |  Property in Pune for Sale</h3>
            <div className={styles.inputSerch}>
             <select name="" id="">
                 <option value="Buy">BUY</option>

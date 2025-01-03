@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './component/navbar/Navbar';
-// import Hero from './component/hero/Hero';
+import ScrollToTop from './component/ScrollTop/ScrollTop';
 import Hero from './component/heroHome/Hero';
 import About from './page/about/About';
 import Service from './page/service/Service';
@@ -24,6 +24,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <ScrollToTop/>
       <Routes>
        
         <Route path="/property/:id" element={<PropertyDetail />} />     
@@ -34,7 +35,7 @@ function App() {
           {/* <Route path="sell" element={<Sell />} /> */}
         </Route>
 
-       
+        
         <Route path="/propertyes" element={<Property/>} />
         <Route path="/aboutus" element={<AboutUs/>}/>
         <Route path="/Contact" element={<ContactPage/>} />
