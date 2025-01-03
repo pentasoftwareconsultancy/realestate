@@ -90,8 +90,8 @@ const AboutUs = () => {
         <div className="about-content">
           <h2>About Devcave Homes:</h2>
           <p>
-            Devcave Homes enable prospective home buyers to choose from an array of
-            residential projects offered by eminent developers with luxurious
+            Devcave Homes enable prospective home buyers to choose from an array 
+            of residential projects offered by eminent developers with luxurious
             amenities that cater to your requirement. At Devcave Homes, we focus on
             providing an exceptional experience to our prospective homebuyers. As
             a result, our highly qualified and seasoned professionals assist
