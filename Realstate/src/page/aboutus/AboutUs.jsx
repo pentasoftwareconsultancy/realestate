@@ -121,7 +121,7 @@ const AboutUs = () => {
                   src={`https://randomuser.me/api/portraits/${index % 2 === 0 ? "men" : "women"}/${index + 10}.jpg`}
                   alt="Client"
                 />
-                <h3>Akshay</h3>
+                <h3>Akshay Kumar</h3>
                 <div className="rating">⭐⭐⭐⭐⭐</div>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.

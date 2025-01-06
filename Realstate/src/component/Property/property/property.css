@@ -5,14 +5,14 @@
   }
   
   .featured-properties h2 {
-    font-size: 2.5rem;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 20px;
     color: #333;
   }
   
   .featured-properties p {
-    font-size: 1.125rem;
+    font-size: 18px;
     color: #777;
     margin-bottom: 30px;
   }
@@ -157,9 +157,9 @@
   }
   
   .property-card .card-title {
-    font-size: 2rem;
+    font-size: 16px;
     font-weight: 600;
-    color: #2c3e50;
+    color: #333;
     margin-bottom: 15px;
     transition: color 0.3s ease;
   }
@@ -185,7 +185,7 @@
   
   .property-card .item-icon {
     color: #27ae60;
-    font-size: 20px;
+    font-size: 14px;
   }
   
   .property-card .card-meta {
@@ -198,12 +198,12 @@
   }
   
   .property-card .meta-title {
-    color: #7f8c8d;
+    color: #333;
     margin-bottom: 10px;
   }
   
   .property-card .meta-text {
-    font-size: 1.5rem;
+    font-size: 14px;
     font-weight: 500;
     display: flex;
     gap: 8px;
@@ -213,7 +213,7 @@
     display: flex;
     gap: 5px;
     color: #f39c12;
-    font-size: 16px;
+    font-size: 14px;
   }
 
 .section-titles {
@@ -229,7 +229,7 @@
 .section-text {
   font-size: 1.6rem;
   font-weight: 400; 
-  color: #666;
+  color: #444;
   text-align: center; 
   line-height: 1.8; 
   max-width: 800px; 

@@ -18,7 +18,7 @@ const ServicePage = () => {
 
   return (
     <>
-      {/* Banner Section */}
+     
       <div className="service-banner1">
         <div className="service-banner1-text">
           <h2>Services</h2>
@@ -39,13 +39,13 @@ const ServicePage = () => {
         <p><em>Hand-holding clients through the entire journey</em></p>
       </div>
 
-      {/* Service Details Section */}
+      
       <div className="service-details">
         <h3>Everything you Need at One Place</h3>
         <h4>In-House Services</h4>
         
         <div className="service-grid">
-          {/* Service Cards */}
+  
           <div className="service-card">
             <img src="https://www.squareyards.com/assets/images/new-dotcom-services-icons/home-loan.png" alt="Home Loan" />
             <p>Home Loan</p>

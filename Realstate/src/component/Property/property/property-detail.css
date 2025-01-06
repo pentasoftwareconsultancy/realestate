@@ -415,11 +415,9 @@ body {
 .details-table tbody tr:hover {
   background-color: #f1f1f1;
 }
-
 .unit-details {
   width: 90%;
   margin: 20px auto;
-  margin-right: 100px;
 }
 
 .unit-details-table {
@@ -457,40 +455,71 @@ body {
   background-color: #f1f1f1;
 }
 
-@media (max-width: 768px) {
-
-  .details-table,
-  .unit-details-table {
-    width: 90%;
-    font-size: 16px;
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .card {
+      flex-direction: row;
+      height: auto;
   }
 
-  .details-table th,
-  .details-table td,
+  .image {
+      width: 40%;
+      height: 100%;
+      border-radius: 10px 0 0 10px;
+  }
+
+  .content {
+      width: 60%;
+      padding: 20px;
+  }
+
+  .unit-details {
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
   .unit-details-table th,
   .unit-details-table td {
-    padding: 10px;
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+      width: 100%;
+      text-align: center;
+  }
+
+  .bottomdiv {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .unit-details,
+  .unit-details-table {
+      width: 90%;
+      font-size: 14px;
+  }
+
+  .unit-details-table th,
+  .unit-details-table td {
+      padding: 10px;
   }
 }
 
 @media (max-width: 480px) {
-
-  .details-table,
+  .unit-details,
   .unit-details-table {
-    width: 100%;
-    font-size: 14px;
-    margin: 10px auto;
+      width: 100%;
+      font-size: 12px;
+      margin: 10px auto;
   }
 
-  .details-table th,
-  .unit-details-table th {
-    font-size: 14px;
-  }
-
-  .details-table td,
+  .unit-details-table th,
   .unit-details-table td {
-    font-size: 14px;
-    word-wrap: break-word;
+      font-size: 12px;
+      word-wrap: break-word;
   }
 }
 
